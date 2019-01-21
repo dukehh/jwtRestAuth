@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-JwtRestApplication<jwtRestAuth>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "mainClass": "com.dgile.gh.jwtRest.JwtRestApplication",
+      "projectName": "jwtRestAuth",
+      "args": ""
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-BcryptEncoderTest<jwtRestAuth>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "mainClass": "com.dgile.gh.jwtRest.BcryptEncoderTest",
+      "projectName": "jwtRestAuth",
+      "args": ""
+    }
+  ]
+}

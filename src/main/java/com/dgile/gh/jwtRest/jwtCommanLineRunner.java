@@ -13,6 +13,7 @@ public class jwtCommanLineRunner implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 		String str = "ABC";
 		log.info("\n====> str: {}", str);
+
 	}
 
 }
