@@ -23,5 +23,13 @@ public class Todo {
 	private String description;
 	private Date targetDate;
 	private boolean isDone;
+	
+	public Todo(String username, String description, Date targetDate, boolean isDone) {
+		super();
+		this.username = username;
+		this.description = description;
+		this.targetDate = targetDate;
+		this.isDone = isDone;
+	}
 
 }
