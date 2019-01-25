@@ -2,10 +2,8 @@ package com.dgile.gh.jwtRest.todo;
 
 import java.util.Date;
 
-import javax.persistence.Basic;
-import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 import lombok.AllArgsConstructor;
@@ -15,13 +13,12 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Entity
 public class Todo {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Basic(optional = false)
-	@Column(name = "id")
-	private long id;
+	@GeneratedValue
+	private Long id;
 	private String username;
 	private String description;
 	private Date targetDate;
