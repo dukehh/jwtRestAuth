@@ -29,7 +29,7 @@ public class ToDoResource {
 	@GetMapping("/users/{username}/todos")
 	public List<Todo> getAllTodos(@PathVariable String username) {
 
-		log.info("\n====>Username: {}", username);
+		log.info("\n====> Username: {}", username);
 		return todoService.findAll();
 
 	}
@@ -37,7 +37,7 @@ public class ToDoResource {
 	@GetMapping("/users/{username}/todos/{id}")
 	public Todo getTodoById(@PathVariable String username, @PathVariable long id) {
 
-		log.info("\n====>Username: {}\n====>ID: {}", username, id);
+		log.info("\n====> Username: {}\n====> ID: {}", username, id);
 
 		return todoService.findById(id);
 
@@ -63,7 +63,7 @@ public class ToDoResource {
 
 	@DeleteMapping("/users/{username}/todos/{id}")
 	public ResponseEntity<Void> deleteToDol(@PathVariable long id) {
-		log.info("\n====>ID: {}", id);
+		log.info("\n====> ID: {}", id);
 
 		Todo todo = todoService.deleteById(id);
 		if (todo != null) {

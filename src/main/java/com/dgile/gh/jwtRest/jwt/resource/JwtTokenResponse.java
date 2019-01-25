@@ -13,7 +13,7 @@ public class JwtTokenResponse implements Serializable {
 
 	public JwtTokenResponse(String token) {
 		this.token = token;
-		log.info("\n====>Token: {}", token);
+		log.info("\n====> Token: {}", token);
 	}
 
 	public String getToken() {

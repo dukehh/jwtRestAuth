@@ -11,8 +11,10 @@ public class jwtCommanLineRunner implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		String str = "ABC";
-		log.info("\n====> str: {}", str);
+		
+		String str = getClass().toString();
+		str=str.substring(str.lastIndexOf(".") + 1);		
+		log.info("\n====> Class: {}", str);
 
 	}
 

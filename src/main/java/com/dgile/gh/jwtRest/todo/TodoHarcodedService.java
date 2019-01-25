@@ -27,7 +27,7 @@ public class TodoHarcodedService {
 
 	public List<Todo> findAll() {
 
-		log.info("\n====>Todo: {}", Helpers.Obj2Json(todos, true));
+		log.info("\n====> Todo: {}", Helpers.Obj2Json(todos, true));
 		return todos;
 
 	}
@@ -36,11 +36,11 @@ public class TodoHarcodedService {
 		if (todo.getId() == -1 || todo.getId() == 0) {
 			todo.setId(++idCounter);
 			todos.add(todo);
-			log.info("\n====>new Todo saved: {}", todo.getId());
+			log.info("\n====> new Todo saved: {}", todo.getId());
 		} else {
 			deleteById(todo.getId());
 			todos.add(todo);
-			log.info("\n====>Todo updated: {}", todo.getId());
+			log.info("\n====> Todo updated: {}", todo.getId());
 
 		}
 		
@@ -51,7 +51,7 @@ public class TodoHarcodedService {
 
 		Todo todo = findById(id);
 
-		log.info("\n====>Todo: {}", Helpers.Obj2Json(todo, false));
+		log.info("\n====> Todo: {}", Helpers.Obj2Json(todo, false));
 		if (todo == null)
 			return null;
 
