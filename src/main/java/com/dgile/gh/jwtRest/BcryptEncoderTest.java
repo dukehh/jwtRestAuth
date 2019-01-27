@@ -17,7 +17,7 @@ public class BcryptEncoderTest {
 		ArrayList<String> encodedArr = new ArrayList<String>();
 
 		for (int i = 1; i < 10; i++) {
-			String encoded = encoder.encode("EigQmAh2-56");
+			String encoded = encoder.encode("Eig-01");
 			encodedArr.add("\n" + encoded);
 		}
 		encodedArr.add("\n");
